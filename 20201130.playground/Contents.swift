@@ -67,3 +67,19 @@ if let s = job {
 if let job = job {
     print("Your Job is " + job)
 }
+var wordToLookup2 = "😱"
+var meaning2 = emojiDict[wordToLookup2]
+if let meaning2 = meaning2 {
+    let containerView = UIView(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
+    containerView.backgroundColor = UIColor.orange
+    let lbEmoji = UILabel(frame: CGRect(x: 95, y: 20, width: 150, height: 150))
+    lbEmoji.text = wordToLookup2
+    lbEmoji.font = UIFont.systemFont(ofSize: 100)
+    containerView.addSubview(lbEmoji)
+    
+    let lbMeaning = UILabel(frame: CGRect(x: 110, y: 100, width: 150, height: 150))
+    lbMeaning.text = meaning
+    lbMeaning.font = UIFont.systemFont(ofSize: 30)
+    lbMeaning.textColor = UIColor.white
+    containerView.addSubview(lbMeaning)
+}
